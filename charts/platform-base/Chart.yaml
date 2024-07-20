@@ -1,0 +1,11 @@
+apiVersion: v2
+name: platform-base
+description: Composition of common ArgoCD Applications to install a platform 
+
+type: application
+
+sources:
+  - github.com/thschue/platform-base-helm
+
+version: 0.0.1
+appVersion: "0.0.1"
