@@ -1,46 +1,5 @@
-cluster:
-  monitoring: false
-  deployment: false
-
-certmanager:
-  enabled: true
-  repository:
-  tag:
-
-ingressnginx:
-  enabled: true
-  repository:
-  tag:
-
-externaldns:
-  enabled: false
-  repository:
-  tag:
-
 kyverno:
   enabled: true
-  repository:
-  tag:
-
-openbao:
-  enabled: false
-  repository:
-  tag:
-
-argo-workflows:
-  enabled: false
-  repository:
-  tag:
-
-gitea:
-  enabled: false
-  repository:
-  tag:
-
-harbor:
-  enabled: false
-  repository:
-  tag:
 
 
 
