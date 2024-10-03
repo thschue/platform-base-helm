@@ -2,6 +2,7 @@ argocd:
   clusterName: my-cluster
   namespace: argocd
   cluster: https://kubernetes.default.svc
+  project: default
 
 kyverno:
   enabled: true
