@@ -1,5 +1,14 @@
+argocd:
+  clusterName: my-cluster
+  namespace: argocd
+  cluster: https://kubernetes.default.svc
+
 kyverno:
   enabled: true
+  chartRepo: https://kyverno.github.io/kyverno/
+  chart: kyverno
+  version: 3.2.7
+  namespace: kyverno
 
 
 
