@@ -34,6 +34,13 @@
       "matchStrings": [
         "# renovate: datasource=(?<datasource>.+?) depName=(?<depName>.+?)\\s.*?_VERSION ?(\\??=|\\: ?) ?\\\"?(?<currentValue>.+?)?\\\"?\\s"
       ]
+    },
+    {
+      "fileMatch": ["\\.yaml$"],
+      "matchStrings": [
+        "chart:\n *repository: (?<registryUrl>.*?)\n *name: (?<depName>.*?)\n *version: (?<currentValue>.*)\n"
+      ],
+      "datasourceTemplate": "helm"
     }
   ]
 }
